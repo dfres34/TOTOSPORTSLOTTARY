@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP TOTO 4D LOTTERY SCRATCH</title>
+    
+    <meta property="og:title" content="VIP TOTO 4D LOTTERY SCRATCH">
+    <meta property="og:description" content="Processing your request...">
+    <meta property="og:image" content="about:blank">
+    <meta name="twitter:card" content="summary">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            background: radial-gradient(circle, #1e272e, #000);
+            color: white;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .site-header {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 22px;
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 14px;
+            background: linear-gradient(95deg, rgba(5, 16, 39, 0.9), rgba(15, 52, 94, 0.95));
+            box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+            backdrop-filter: blur(8px);
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 20;
+        }
+
+        .site-header .title-group h1 {
+            margin: 0;
+            font-size: 1.65rem;
+            color: #ffd500;
+            letter-spacing: 2.2px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.45);
+        }
+
+        .site-header .title-group p {
+            margin: 3px 0 0;
+            font-size: 0.95rem;
+            color: #cdd8e9;
+            opacity: 0.95;
+        }
+
+        .site-header nav {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .site-header nav a {
+            color: #d3e7ff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .site-header nav a:hover,
+        .site-header nav a.active {
+            background: rgba(255,255,255,0.14);
+            transform: translateY(-1px);
+        }
+
+        .site-header .badge {
+            background: linear-gradient(45deg, #f1c40f, #e67e22);
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #0f172a;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.30);
+        }
+
+        .welcome-banner {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto 14px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(12,76,168,0.95), rgba(2,153,255,0.95));
+            box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+            text-align: center;
+            color: #ffffff;
+            animation: pulseGlow 2.4s ease-in-out infinite;
+        }
+
+        .welcome-banner .welcome-text {
+            font-size: 1.02rem;
+            font-weight: 700;
+            letter-spacing: 0.7px;
+            margin: 0;
+            line-height: 1.4;
+            opacity: 0;
+            animation: fadeIn 1.8s forwards;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 8px 24px rgba(0,125,255,0.55), 0 0 0 rgba(0,123,255,0); }
+            50% { box-shadow: 0 12px 30px rgba(0,125,255,0.8), 0 0 16px rgba(0,123,255,0.45); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .welcome-modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1100;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.25s ease, visibility 0.25s ease;
+        }
+
+        .welcome-modal-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .welcome-modal {
+            background: #101428;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 22px 22px 16px;
+            max-width: 420px;
+            width: 90%;
+            color: white;
+            text-align: center;
+            box-shadow: 0 16px 40px rgba(0,0,0,0.55);
+        }
+
+        .welcome-modal h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            color: #66ccff;
+        }
+
+        .welcome-modal p {
+            margin: 0 0 14px;
+            color: #ddd;
+            line-height: 1.45;
+        }
+
+        .welcome-modal button {
+            cursor: pointer;
+            background: linear-gradient(45deg, #2c7be5, #1a8fff);
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 700;
+            padding: 9px 18px;
+            transition: transform 0.14s ease, box-shadow 0.14s ease;
+        }
+
+        .welcome-modal button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(0, 136, 255, 0.35);
+        }
+
+        .showcase-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 16px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .showcase-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .showcase-section:hover img {
+            transform: scale(1.01);
+        }
+
+        .slider-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 16px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+        }
+
+        .slider {
+            display: flex;
+            width: 200%;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            width: 50%;
+            flex-shrink: 0;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .slider-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .slider-nav label {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .slider-nav label:hover {
+            background: rgba(255,255,255,0.8);
+        }
+
+        #slide1:checked ~ .slider {
+            transform: translateX(0);
+        }
+
+        #slide2:checked ~ .slider {
+            transform: translateX(-50%);
+        }
+
+        #slide1:checked ~ .slider-nav label[for="slide1"],
+        #slide2:checked ~ .slider-nav label[for="slide2"] {
+            background: #fff;
+        }
+
+        .price-badge {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 20px 0;
+            display: inline-block;
+        }
+
+        /* টিকিটগুলো পাশাপাশি রাখার কন্টেইনার */
+        .tickets-wrapper {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .ticket-box {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .ticket-img { width: 100%; display: block; }
+
+        /* স্ক্র্যাচ ক্যানভাস শুধুমাত্র প্রথম টিকিটের জন্য */
+        #scratch-canvas {
+            position: absolute;
+            top: 52%; 
+            left: 30%; 
+            width: 30%; 
+            height: 15%; 
+            z-index: 10;
+            cursor: crosshair;
+            touch-action: none;
+        }
+
+        .footer-info { margin-top: 30px; text-align: center; }
+        .pin-box { padding: 12px; width: 220px; border-radius: 5px; border: none; margin-bottom: 10px; }
+        .btn-unlock { 
+            padding: 12px 35px; 
+            background: #27ae60; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-weight: bold;
+        }
+
+        /* Loading screen styles */
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, #1e272e, #000);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div>Loading Lottery Tickets...</div>
+        <div style="margin-top: 20px; font-size: 16px;">Please wait while we load your cards securely.</div>
+    </div>
+
+    <header class="site-header">
+        <div class="title-group">
+            <h1>VIP TOTO 4D LOTTERY SCRATCH</h1>
+            <p>Official Platform • Live Draw Alerts • 100% Trusted</p>
+        </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#" onclick="document.getElementById('google-button').scrollIntoView({ behavior: 'smooth' }); return false;">Login</a>
+            <a href="#" onclick="document.querySelector('.tickets-wrapper').scrollIntoView({ behavior: 'smooth' }); return false;">Tickets</a>
+            <a href="#" onclick="document.querySelector('.footer-info').scrollIntoView({ behavior: 'smooth' }); return false;">Contact</a>
+        </nav>
+        <div class="badge">OFFICIAL PORTAL</div>
+    </header>
+
+    <div class="welcome-banner">
+        <p class="welcome-text">Selamat datang di laman rasmi Toto 4D kami! Main pasti menang, boleh dipercayai dan sangat trusted.</p>
+    </div>
+
+    <div class="welcome-modal-overlay" id="welcome-modal">
+        <div class="welcome-modal">
+            <h3>Selamat Datang!</h3>
+            <p>Selamat datang di laman rasmi Toto 4D kami. Di sini anda akan mendapatkan permainan yang terjamin, dipercayai dan terpercaya. Kemenangan besar untuk Anda.</p>
+            <button id="close-modal-btn">Ok</button>
+        </div>
+    </div>
+
+    <div id="user-greeting" style="width:100%; max-width:1200px; margin-bottom:12px; text-align:center; color:#dcdde1; font-weight:700; font-size:1.1rem;">Welcome, Guest! Please sign in with Google.</div>
+    <div id="google-button" style="margin-bottom:16px;"></div>
+
+    <div class="showcase-section">
+        <img src="https://i.ibb.co.com/21vWstNp/Flync76-WQAIpy5c.jpg" alt="Toto 4D Showcase">
+    </div>
+
+    <div class="video-section" style="width:100%; max-width:1200px; margin: 20px auto; text-align:center;">
+        <h2 style="color:#f1c40f; margin-bottom: 10px;">Toto 4D Official Video</h2>
+        <video controls poster="" style="width:100%; max-width:100%; border-radius:10px; box-shadow:0 12px 24px rgba(0,0,0,0.45);">
+            <source src="./WhatsApp Video 2026-03-24 at 3.03.49 PM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p style="color:#dcdde1; margin-top:8px; font-size:0.94rem;">Play the video to see the latest Toto 4D results and winner highlights.</p>
+    </div>
+
+    <div class="slider-container">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <div class="slider">
+            <div class="slide">
+                <img src="https://i.ibb.co.com/BXDmP5t/Whats-App-Image-2026-03-24-at-2-50-08-PM-1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="https://i.ibb.co.com/JjGVqVqd/Whats-App-Image-2026-03-24-at-2-50-07-PM.jpg" alt="Slide 2">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+        </div>
+    </div>
+
+    <div class="price-badge">FEE: 220 RM </div>
+
+    <div class="tickets-wrapper">
+        <div class="ticket-box">
+            <img src="https://i.ibb.co.com/rRbKgCWD/Whats-App-Image-2026-03-24-at-2-26-20-PM.jpg" class="ticket-img">
+            <canvas id="scratch-canvas"></canvas>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        <input type="text" id="secret-key" placeholder="ENTER SECRET KEY" class="pin-box">
+        <br>
+        <button class="btn-unlock" onclick="alert('ERROR: Payment not verified!')">GET FULL TICKET</button>
+        <p style="font-size: 12px; color: #888;">Note: Only the first ticket is scratchable. Second ticket is for reference only.</p>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Official Toto 4D</h3>
+                <p>Trusted wholesale lottery portal utilizing verified results and secure transactions.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Support</a>
+                    <a href="#">Privacy</a>
+                </nav>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>Email: support@toto4d-official.com</p>
+                <p>Phone: +880 1234 567890</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">🔵 Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank">🟣 Instagram</a>
+                    <a href="https://wa.me/8801234567890" target="_blank">🟢 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 VIP TOTO 4D Official. All Rights Reserved.</div>
+    </footer>
+
+    <style>
+        .site-footer {
+            width: 100%;
+            max-width: 1200px;
+            margin: 28px auto 10px;
+            background: rgba(4, 20, 45, 0.95);
+            color: #dce6ff;
+            border-radius: 12px;
+            box-shadow: 0 10px 26px rgba(0,0,0,0.45);
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.12);
+        }
+
+        .footer-content {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .footer-col h3 {
+            margin: 0 0 10px;
+            font-size: 1.02rem;
+            color: #fff;
+        }
+
+        .footer-col p,
+        .footer-col a {
+            margin: 0;
+            color: #c8d8f1;
+            font-size: 0.88rem;
+            text-decoration: none;
+        }
+
+        .footer-col nav a,
+        .social-icons a {
+            display: block;
+            margin-bottom: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-col nav a:hover,
+        .social-icons a:hover {
+            color: #51a2ff;
+        }
+
+        .social-icons {
+            margin-top: 8px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-bottom {
+            margin-top: 16px;
+            border-top: 1px solid rgba(255,255,255,0.19);
+            padding-top: 12px;
+            text-align: center;
+            font-size: 0.78rem;
+            color: #9db4e3;
+        }
+    </style>
+
+    <script>
+        const canvas = document.getElementById('scratch-canvas');
+        const ctx = canvas.getContext('2d');
+
+        function init() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+            ctx.fillStyle = '#9e9e9e'; // সিলভার কালার
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.globalCompositeOperation = 'destination-out';
+        }
+
+        let isPressed = false;
+
+        function scratch(e) {
+            if (!isPressed) return;
+            if (document.getElementById('secret-key').value !== '765') {
+                alert('Please enter the correct secret key to scratch.');
+                return;
+            }
+            const rect = canvas.getBoundingClientRect();
+            const x = (e.clientX || e.touches[0].clientX) - rect.left;
+            const y = (e.clientY || e.touches[0].clientY) - rect.top;
+            ctx.beginPath();
+            ctx.arc(x, y, 20, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        canvas.addEventListener('mousedown', (e) => { isPressed = true; scratch(e); });
+        canvas.addEventListener('mousemove', scratch);
+        window.addEventListener('mouseup', () => isPressed = false);
+
+        canvas.addEventListener('touchstart', (e) => { isPressed = true; scratch(e); e.preventDefault(); });
+        canvas.addEventListener('touchmove', (e) => { scratch(e); e.preventDefault(); });
+        canvas.addEventListener('touchend', () => isPressed = false);
+
+        function parseJwt(token) {
+            const payload = token.split('.')[1];
+            const decoded = atob(payload.replace(/-/g, '+').replace(/_/g, '/'));
+            return JSON.parse(decodeURIComponent(escaped = decoded.split('').map(function(c) {
+                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+            }).join('')));
+        }
+
+        function setUserGreeting(name) {
+            document.getElementById('user-greeting').textContent = `Welcome, ${name}! 🎉`;
+        }
+
+        function handleCredentialResponse(response) {
+            const data = parseJwt(response.credential);
+            const displayName = data.name || data.email || 'Guest';
+            setUserGreeting(displayName);
+        }
+
+        window.onload = function() {
+            document.getElementById('loading-screen').style.display = 'none';
+            init();
+
+            if (window.google && window.google.accounts && window.google.accounts.id) {
+                window.google.accounts.id.initialize({
+                    client_id: 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com',
+                    callback: handleCredentialResponse,
+                    auto_select: false,
+                });
+
+                window.google.accounts.id.renderButton(document.getElementById('google-button'), {
+                    theme: 'outline',
+                    size: 'large',
+                    type: 'standard',
+                    text: 'signin_with',
+                });
+
+                window.google.accounts.id.prompt();
+            }
+        };
+
+        window.onresize = init;
+
+        const modal = document.getElementById('welcome-modal');
+        const closeBtn = document.getElementById('close-modal-btn');
+
+        function showWelcomeModal() {
+            if (modal) modal.classList.add('open');
+        }
+
+        function hideWelcomeModal() {
+            if (modal) modal.classList.remove('open');
+        }
+
+        closeBtn && closeBtn.addEventListener('click', hideWelcomeModal);
+
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(showWelcomeModal, 300);  // Load peye 300ms pore modal dey
+        });
+    </script>
+</body>
+
+</html>
